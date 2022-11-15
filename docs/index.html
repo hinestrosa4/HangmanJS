@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="ahorcado.js"></script>
+</head>
+
+<body>
+
+    <h1>EL AHORCADO</h1><br><br>
+
+    <button type="submit" id="bStart" class="bEmpezar" onclick="chooseTopic()">Empezar Juego</button>
+
+    <h2 id="titleTopic">&#128073 ELEGIR CATEGORIA &#128072</h2>
+    <select id="categorias" class="topic">
+        <option value="-1" hidden>Elija una categoria</option>
+        <option value="0">Deporte</option>
+        <option value="1">Tecnologia</option>
+        <option value="2">Ropa</option>
+        <option value="3">Muebles</option>
+    </select>
+    <span id="msgError" class="error"></span>
+    <button id="bEnviarCategoria" type="submit" class="bEnviar" onclick="chooseCategory()">Seleccionar</button>
+    <div>
+        <span class="panel_iz" id="categoria">Categoria: <span id="tipoCategoria"></span></span><br>
+        <span class="panel_iz" id="cont">Contador: <span id="contador"></span><span id="seg"></span><br>
+            <span class="palabraGuiones" id="palabra_guiones"></span><br>
+            <span class="panel_iz" id="puntuacion">Puntuación: <span id="numPuntuacion">0</span></span><br>
+            <span class="panel_iz" id="errores">Errores: <span id="numError">0</span></span><br><br><br><br>
+            <span class="panel_iz" id="letrasrep">Repes: <span id="repetidas"></span></span>
+    </div>
+    <div class="panel_der" id="panel_der">
+        <span class="errorText" id="errorText"></span><br>
+        <input type="text" id="letra" name="letra" autofocus onKeyUp="this.value=this.value.toLowerCase();" />
+        <button type="submit" id="enviarLetra" onclick="checkLetter()">Enviar</button>
+    </div>
+
+    <img id="imagen" class="imagen" width="240" height="330" /><br><br>
+    <input type="button" class="bRepeatGame" id="bRepeatGame" onclick="repeatGame()" value="Volver a Jugar">
+
+    <div id="teclado" class="sTeclado">
+
+    </div>
+</body>
+
+</html>

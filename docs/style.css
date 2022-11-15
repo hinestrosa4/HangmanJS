@@ -1,0 +1,191 @@
+body {
+    background-image: url("images/fondo.png");
+    background-size: cover;
+}
+
+#tipoCategoria,#contador,#seg,#numError,#repetidas{
+    color: rgb(253, 255, 149);
+}
+
+#numPuntuacion{
+    color: rgb(145, 62, 201);
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-size: 50px;
+}
+
+h2 {
+    display: none;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+
+span,
+p {
+    color: white;
+    font-size: 30px;
+    left: -30px;
+}
+
+.sTeclado {
+    display: none;
+    position: absolute;
+    top: 30%;
+    left: 80%;
+    text-align: center;
+
+}
+
+.panel_iz {
+    display: none;
+}
+
+.panel_der {
+    display: none;
+    left: 80%;
+    top: 14%;
+    position: absolute;
+}
+
+#imagen{
+    left: 43%;
+    top: 36%;
+    position: absolute;
+}
+
+#letra {
+    border-radius: 10px;
+    padding: 6px;
+    font-weight: bold;
+    margin: 4px;
+    
+}
+
+.errorText {
+    color: red;
+    font-size: 20px;
+    margin: 5px;
+}
+
+#enviarLetra {
+    border-radius: 14px;
+    background-color: rgb(72, 134, 226);
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+img {
+    display: none;
+    margin: auto;
+    border-radius: 30px;
+}
+
+#bRepeatGame {
+    position: absolute;
+    left: 45%;
+    top: 86%;
+    display: inline-block;
+    padding: 15px 50px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #ff0000;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 6px rgb(215, 230, 83);
+    opacity: 0.9;
+
+    display: none;
+    margin: auto;
+    border-radius: 30px;
+}
+
+.bRepeatGame:hover {
+    background-color: #bb3030
+}
+
+.bRepeatGame:active {
+    background-color: #bb3030;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.bEnviar {
+    display: none;
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 6%;
+    margin-right: 25%;
+    padding: 5px;
+    font-size: 20px;
+    background-color: #ffffff;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.bEnviar:hover {
+    color: #ffffff;
+    background-color: #4fd6ff;
+    font-weight: bold;
+}
+
+.error {
+    text-align: center;
+    color: red;
+    font-weight: bold;
+    margin-left: 41%;
+    font-size: 24px;
+}
+
+.topic {
+    display: none;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-bottom: 2%;
+    padding: 10px;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #1883ba;
+    border-radius: 6px;
+    border: 2px solid #0016b0;
+    font-weight: bold;
+}
+
+
+.bEmpezar {
+    display: block;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding: 10px;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #1883ba;
+    border-radius: 6px;
+    border: 2px solid #0016b0;
+    font-weight: bold;
+}
+
+.bEmpezar:hover {
+    color: #1883ba;
+    background-color: #d1eff1;
+    font-weight: bold;
+}
+
+.palabraGuiones {
+    text-align: center;
+    display: block;
+    position: absolute;
+    left: 45%;
+    top: 22%;
+    letter-spacing: 10px;
+}
